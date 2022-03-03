@@ -17,7 +17,7 @@ android {
 
     buildTypes {
         release {
-            minifyEnabled true
+            minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
@@ -47,7 +47,7 @@ afterEvaluate {
                 from components.release
                 groupId = 'com.corgivn'
                 artifactId = "file_picker"
-                version = '1.0.3'
+                version = '1.0.4'
             }
         }
     }
